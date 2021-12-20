@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <style>
+    .letter-spacing {
+      letter-spacing: 1rem
+    }
+
+    .display-4 {
+      font-size: 3.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    .card-title {
+      margin-bottom: 0rem;
+    }
+
+    .mb-5 {
+      margin-bottom: 2.5rem !important;
+    }
+
+    .imgbg {
+      width: 250px;
+      height: 250px;
+    }
+
+    .display-6 {
+      font-size: calc(1.375rem + 1.5vw);
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    .mb-5 {
+      margin-bottom: 5rem !important;
+    }
+
+    @media (min-width: 1200px) {
+      .display-6 {
+        font-size: 1.5rem;
+      }
+
+      .mb-5 {
+        margin-bottom: 3rem !important;
+      }
+
+      .display-4 {
+        font-size: 3.5rem;
+      }
+
+      .cut-right {
+        top: 220px;
+        right: 450px;
+        width: 200px;
+        height: 100px;
+        transform: rotate(45deg);
+        z-index: 1000;
+        box-shadow: 0px 10px 10px -15px #000;
+      }
+
+      .cut-left {
+        bottom: 240px;
+        left: 450px;
+        width: 200px;
+        height: 100px;
+        transform: rotate(-135deg);
+        z-index: 1000;
+        box-shadow: 0px 10px 10px -15px #000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="cut-right bg-white position-absolute"></div>
+    <div class="cut-left bg-white position-absolute"></div>
+    <div class="card mb-3 shadow-sm rounded" style="width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-4 py-0 bg-warning d-flex justify-content-center align-items-center">
+          <div class="imgbg d-flex justify-content-center align-items-center">
+            <img src="./lion.svg" style="width: 75%;">
+          </div>
+        </div>
+        <div class="col-md-8 mx-auto p-2" style="width:400px;">
+          <div class="card-body">
+            <h5 class="card-title fw-bold pt-5">Front-end Designer</h5>
+            <h1 class="card-title fw-bold display-4">Shaw chi Wu</h1>
+            <h5 class="letter-spacing mb-5 display-6">泰山職訓局</h5>
+            <ul class="card-text list-unstyled">
+              <li>住址：新北市淡水區中正東路二段125號11樓之6</li>
+              <li>電話：0903-xxxxxx</li>
+              <li>E-Mail：joyful_life865@gmail.com</li>
+              <li class="pb-4">網站：https://www.google.com.tw</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
